@@ -3,14 +3,16 @@
         <div class="col">
             <div class="row">
                 <div class="col">
-                    <h3>Informacion de usuario: {{usuario.nombre}}</h3>
+                    <a [routerLink]="['/', 'tasks', usuario.id ]">
+                        <h3>Informacion de usuario: {{usuario.nombre}}</h3>
+                    </a>
                 </div>
-                <div class="col">
+                <!-- <div class="col">
                     <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
+                </div> -->
             </div>
-            
-            
+
+
             <ol class="list-group">
                 <li class="list-group-item">Nombre: {{usuario.nombre}}</li>
                 <li class="list-group-item">Telefono: {{usuario.celular}}</li>
