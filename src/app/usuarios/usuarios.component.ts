@@ -9,10 +9,11 @@ export class UsuariosComponent implements OnInit {
  
   @Input() usuario: any;
 
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.usuario);
+    //console.log(this.usuario);
   }
 
 }

@@ -1,5 +1,11 @@
 <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Usuarios</a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="https://icloudseven.com/wp-content/uploads/2019/04/logo-i-cloud-seven-color-200x58.png" />
+    </a>
+    <div class="d-flex">
+      <input class="form-control me-2" type="search" [(ngModel)]="buscar" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit" (click)="buscarByEmail()">Buscar</button>
     </div>
-  </nav>
+  </div>
+</nav>
