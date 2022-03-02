@@ -21,7 +21,7 @@ pipeline {
 		stage('Deploy our image') {
 			steps{
 				script {
-					docker.withRegistry( 'ic7cr01.azurecr.io', registryCredential ) {
+					docker.withRegistry('https://ic7cr01.azurecr.io/', registryCredential ) {
 					dockerImage.push()
 					}
 				}
