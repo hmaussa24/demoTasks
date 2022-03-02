@@ -1,7 +1,7 @@
 pipeline {
 	environment {
 		registry = "hmaussa1/angular-app"
-		registryCredential = 'dockerhub'
+		registryCredential = 'containerregistry'
 		dockerImage = ''
 	}
 	agent any
@@ -21,7 +21,7 @@ pipeline {
 		stage('Deploy our image') {
 			steps{
 				script {
-					docker.withRegistry( '', registryCredential ) {
+					docker.withRegistry( 'ic7cr01.azurecr.io', registryCredential ) {
 					dockerImage.push()
 					}
 				}
