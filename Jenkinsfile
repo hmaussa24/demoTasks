@@ -1,7 +1,7 @@
 pipeline {
 	environment {
 		registry = "ic7cr01/angular-app"
-		registryCredential = 'containerregistry'
+		registryCredential = 'acr'
 		dockerImage = ''
 	}
 	agent any
