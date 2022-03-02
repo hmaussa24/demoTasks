@@ -1,6 +1,6 @@
 pipeline {
 	environment {
-		registry = "hmaussa1/angular-app"
+		registry = "ic7cr01/angular-app"
 		registryCredential = 'containerregistry'
 		dockerImage = ''
 	}
